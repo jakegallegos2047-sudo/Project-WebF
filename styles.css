@@ -11,8 +11,72 @@
   --container-pad:20px;
   --ease: cubic-bezier(.2,.9,.3,1);
 }
+
 *{box-sizing:border-box}
 html,body{height:100%}
+
+.bio-image {
+  text-align: center;
+  margin: 18px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(2,4,6,0.4);
+  transition: transform 0.3s var(--ease);
+}
+
+.bio-image img:hover {
+  transform: scale(1.02);
+}
+
+.edu-image, .bio-image {
+  display: flex;
+  justify-content: center;  
+  margin: 18px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.portfolio-image {
+  display: flex;
+  justify-content: center;  
+  margin: 18px 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  max-width: 90%;   
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(2,4,6,0.4);
+  transition: transform 0.3s var(--ease);
+}
+
+.portfolio-image img:hover {
+  transform: scale(1.02);
+}
+
+.edu-image img, .bio-image img {
+  max-width: 90%;         
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(2,4,6,0.4);
+  transition: transform 0.3s var(--ease);
+}
+
+.edu-image img:hover, .bio-image img:hover {
+  transform: scale(1.02);
+}
+
 body{
   margin:0;
   font-family: "Inter", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
