@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Portfolio — J Gallegos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-name">
+        <h1>Portfolio</h1>
+        <p>Selected projects & demonstrations</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="portfolio.html" aria-current="page">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card" aria-labelledby="ses-title">
+      <h3 id="ses-title">SES — Social Engineering Simulator</h3>
+      <p>SES (Social Engineering Simulator) is a project I developed to explore how adversaries use behavioral techniques to gain unauthorized access or influence decisions. The simulator models phishing, pretexting, and impersonation scenarios and allows for repeatable experiments to measure human responses across different cues, levels of urgency, and trust signals. The goal is to provide measurable training and defensible analyses that support improved user awareness and technical controls.</p>
+
+      <p>Technically, SES is built as a lightweight web application with modular scenario definitions and analytics. It collects anonymized signals about user choices and responses (when ethically and legally permitted) so that administrators can compare training vectors and prioritize mitigations. SES demonstrates how combining UX, measurement, and clear reporting can create useful training programs that produce measurable improvements in organizational security posture.</p>
+
+      <p><strong>Live demo:</strong> <a href="https://ses-tau.vercel.app/" target="_blank" rel="noopener">https://ses-tau.vercel.app/</a><br />
+      <strong>Repository:</strong> <a href="https://github.com/jakegallegos2047-sudo/SES" target="_blank" rel="noopener">github.com/jakegallegos2047-sudo</a></p>
+    </article>
+
+    <article class="card" aria-labelledby="other">
+      <h3 id="other">Other projects & notes</h3>
+      <p>Beyond SES, I maintain smaller utilities and writeups that document penetration testing exercises, secure coding patterns, and defensive checks. Examples include scripts for automating reconnaissance tasks (used in controlled labs), sample playbooks for incident response, and short technical write-ups explaining how to interpret logs and trace attack sequences. Each item in my repository includes a short README and notes on safe replication in lab environments.</p>
+
+      <p>Where possible, I favor tools and writeups that are reproducible, well-documented, and designed to be reused by educators and security teams.</p>
+    </article>
+
+    <aside class="card">
+      <h3>Get the code</h3>
+      <p class="small">All public code and demos are available on GitHub.</p>
+      <p><a class="btn" href="https://github.com/jakegallegos2047-sudo" target="_blank" rel="noopener">Open GitHub</a></p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 J Gallegos
+  </footer>
+</body>
+</html>
